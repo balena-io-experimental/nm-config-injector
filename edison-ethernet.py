@@ -6,13 +6,11 @@ s_con = dbus.Dictionary({
     'id': 'resin-wired',
     'type': '802-3-ethernet'})
 
-s_dev = dbus.Dictionary({
-    'ethernet.cloned-mac-address': 'stable',
-    'match-device': 'driver:smsc95xx'})
+s_eth = dbus.Dictionary({'assigned-mac-address': 'random'})
 
 con = dbus.Dictionary({
     'connection': s_con,
-    'device': s_dev})
+    'ethernet': s_eth})
 
 print("Creating connection: {}".format(s_con['id']))
 
