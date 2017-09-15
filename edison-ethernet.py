@@ -18,7 +18,7 @@ s_eth = dbus.Dictionary({'assigned-mac-address': MAC})
 
 con = dbus.Dictionary({
     'connection': s_con,
-    'ethernet': s_eth})
+    '802-3-ethernet': s_eth})
 
 print("Creating connection: {} with MAC: {}".format(s_con['id'], MAC))
 
