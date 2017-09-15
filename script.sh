@@ -1,4 +1,4 @@
-# Run these commands first
+# Run these commands first, assuming you are using a Debian user image
 apt-get update
 apt-get install python python-dbus wget
 wget https://raw.githubusercontent.com/resin-io-playground/nm-config-injector/master/static-mac.py -O /tmp/static-mac.py
